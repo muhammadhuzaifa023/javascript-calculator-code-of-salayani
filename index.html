@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making a calculator app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <form action="" name="myform">
+            <input type="text" class="textview" disabled name="textview">
+        </form>
+        <table>
+            <tr>
+                <td><input type="button" class="button symbol blue" value="√a" onclick="SR('r')" id="r"></td>
+                <td><input type="button" class="button symbol blue" value="a^b" onclick="SR('r')" id="s"></td>
+                <td><input type="button" class="button symbol blue" value="⌫" onclick="backspace()"></td>
+                <td><input type="button" class="button symbol blue" value="÷" onclick="insertoperator('/')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="button number gray" value="7" onclick="insertNum(7)"></td>
+                <td><input type="button" class="button number gray" value="8" onclick="insertNum(8)"></td>
+                <td><input type="button" class="button number gray" value="9" onclick="insertNum(9)"></td>
+                <td><input type="button" class="button symbol blue" value="X" onclick="insertoperator('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="button number gray" value="4" onclick="insertNum(4)"></td>
+                <td><input type="button" class="button number gray" value="5" onclick="insertNum(5)"></td>
+                <td><input type="button" class="button number gray" value="6" onclick="insertNum(6)"></td>
+                <td><input type="button" class="button symbol blue" value="-" onclick="insertoperator('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="button number gray" value="1" onclick="insertNum(1)"></td>
+                <td><input type="button" class="button number gray" value="2" onclick="insertNum(2)"></td>
+                <td><input type="button" class="button number gray" value="3" onclick="insertNum(3)"></td>
+                <td><input type="button" class="button symbol blue" value="+" onclick="insertoperator('+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="button symbol blue" value="C" onclick="clean()"></td>
+                <td><input type="button" class="button number gray" value="0" onclick="insertNum(0)"></td>
+                <td><input type="button" class="button symbol blue" value="." onclick="insertDec()"></td>
+                <td><input type="button" class="button symbol blue" value="=" onclick="equalto()"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>

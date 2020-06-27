@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main{
+    width: 327px;
+    height: 332px;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+    border: 3px solid black;
+}
+.button{
+    width: 75px;
+    height: 50px;
+    font-size: 25px;
+    margin: 2px;
+    cursor: pointer;
+    
+}
+.textview{
+    width: 305px;
+    margin: 5px;
+    font-size: 25px;
+    padding: 5px;
+    background-color: transparent;
+
+}
+.number{
+    background-color: white;
+    font-weight: bold;
+}
+.symbol{
+    background-color: white;
+}
+.gray:hover{
+    background-color: lightblue;
+}
+.blue:hover{
+    background-color: blue;
+}
